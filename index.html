@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM7S7U93Iw1m4kd3XTAZV0U3cz8CUPsbzm8U8" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Portofo<span>lio.</span>
+            </a>
+        </div>
+    
+        <ul class="menu">
+            <li class="menu-li"><a href="#"><span>HOME</span></a></li>
+            <li class="menu-li"><a href="#"><span>ABOUT</span></a></li>
+            <li class="menu-li"><a href="#"><span>Service</span></a></li>
+            <li class="menu-li"><a href="#"><span>PROJECT</span></a></li>
+            <li class="menu-li"><a href="#"><span>CONTACT</span></a></li>
+        </ul>
+        <div class="menu-btn" id="menu-btn">
+            <svg width="30" height="30" viewBox="0 0 100 80" fill="white">
+                <rect width="100" height="10"></rect>
+                <rect y="30" width="100" height="10"></rect>
+                <rect y="60" width="100" height="10"></rect>
+            </svg>
+        </div>
+     </header>
+
+     
+    <main>
+        <section class="home" id="home">
+            <div class="featured-text">
+                <div class="hello">
+                    <p>Hello </p>
+                </div>
+
+                <div class="featured-name">
+                    <span id="SliderValue"></span>
+                </div>
+
+                <div class="featured-text-info">
+                    <p>My name is Dalia! I'm a web developer</p>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="foto-dalia.jpg" alt="" >
+            </div>
+        </section>
+        <section id="about-me">
+            <h1>About Me</h1>
+            <p>Saya Seorang Mahasiswa Universitas Pamulang yang memiliki ketertarikan di bidang Content Creator dan Desain Grafis. Saya memiliki keahlian dalam menciptakan konten yang menarik dan informatif di platform-platform media sosial serta editing konten visual yang menarik dan merancang desain antarmuka pengguna (UI).</p>
+            <div class="social-icons">
+                <a href="#" class="icon-facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon-twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon-instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon-linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <a href="#" class="download-cv">Download CV</a>
+        </section>
+
+        <section class="services" id="services">
+            <h2>My Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- SVG Icon for App Development -->
+                    <img src="data:image/png;base64,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"></div>
+                    <h3>UI / UX </h3>
+                    <p>Learn more..</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- SVG Icon for Web Development -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFY0lEQVR4nO2dW4hVVRjHf2MmJiGKD4akhV1oKNJM6AYNld3R6EJRUEG9hNmr0lAxEUFBiUMlGZUP9jAUBSU9yLEJYhKrGXuJMGjCwIxAgyFTK5odC9aJzXKvtW9r7332Ot8fPtzMWXut7fc73173dUAkEolEIpFIJIprCfAosAPYrU1dP6I/E9WkxcBW4BQQWUx99gqwSKhUq4uBgw4Qpv0IXCpQqtH5wG85YHTtKLBSoPjVGcC3BWB0bRKYI1D86fESMLqmGgAiT5pyOPqwbl3t0Ne2dN8IDT86F5i1OHkcWBhLq64/t6RVeSwTKOV1k+Nbf0FC+osc6W8UIOX1oMW5xxz3HLPco/ISldTtFuf+a+n4LXa84m4TGuU16HgFvZaQ/nVH+ksEiB8dcjj5E+Ahbbsd6X4SGP70vId+yHMCxJ8WFhw26dqvwNkCxK+uB/4qAONv4AaBUY0eAE7mgHECuF9gVKu1wFcZYOwH1giMejQA3AG8A3wP/KFNXb+t+y4qjcizFuiR3o9109c1S2izU/pelcdjOk9RAT0M/OKhuWvaYd1nEWXUALCtAhCmqXl5ea3V1AmMMtqzEiZuXesYGKzCVFlXCRS7vqgRRtfUhJYoQSsdTvtH1yt3AetymrpnVOdhy1+taBEZ2uhw2D0evHWfI/8nhMbpetniLLXAwZcOWMp4SYCcrnctztrl0Vm7LGWoskWGdlqcpf7epjKC0U4Bkq65wN3AZmBLxTZpATLZsjJstln7Uvm0kBboIey6+wVR4La/6ADnMz3w8FGgNlwEyKc98OBRoKZ8m1u2NbJiNDNcI0BoB5BpoFODfef4Dx2x3HPCcc9ETc8dt+k6gIxQjz5yOFcNGJq6TK/3TUp/oKHJqJFQgKx2zIvYnPthToDBA1mUodMzz9hg4ys6VjkATjU4VdsIkFWxUdQ/gRcTNlieBbylVx7O6rzPKxAdUy2KjkaAqPWyPyek2WTktdWy528g4OhoBMitljRfGnkdsaRT289CrDsaA3KLo4mZBciFAbasWvHKejUhzdeGw1YHVHc0WqlfHhvWPg68YKnU39SVuvpGfwasCLju6JlmrzoCw6UzLc3eEKOj1R3D0OqOVgMJrWVVO5DpmgbgIn3elZl+rwPgrP687kHERgcXxSjtAwFCb32RBAjNQxAgNO94AUIfApnQi5PFSPXBREhTuCGolR3DkDUSApBB4F79b17N04eU3ZlyqnWZMvoGyFxge6wXPqu3sWWVmhL+Ifacv+vzGk2NGmVsL7MAOlQgyiFjlvI2ZMyjk3CvOnhgfizNBksZYxVBaSUQF4woY5QMOe5X8zVduQ4kqAJK64CkwYiApzPkM265V72SzomlG04pyzeUVgHJAuMosLREdChQcS3VedYFpTVA1MzieymOOa5PkSsaHZGGZeoaYCal7A88QWkFkDkZImNGOw6P0ZEXypiHX1RoBZCnPMEoEh15oZirZ4IE4tq3OANcnTGf6wpGR1xX6v6KLZ999AGQfR7qjbLRkTVKzBWYQQLZ5OGVNeQhOrK8sp7sByA+KvXxktEhlXpCs9d27kgUe30NVVB3ZIHxfj81e8t2DMdLRIfqtUvHsCSU4Vj6ZSk/f5QmGTrxPLh4Rcm6QwYXPUBZb6yiT9proobes2i9pQwZfi8xQbXO6MwddOxXTNI2o4w3ZILKrUF9xqLr54mW6CnYm/UWhyrKoN9aWf2gEQHSh0A6NZy+tiUQ69QBRIzSPhAgBABkbw88eBSoKd/m1mgPPHgUqOVZAPi/VqTMpolRyAfqh5OXU1DLdaTs6YENlJ2W2x4dGYVhiEQikUgkEokoqP8A2ot7B/x1Dk8AAAAASUVORK5CYII=">
+                        
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Learn more..</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- SVG Icon for Backend Development -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGyUlEQVR4nO2df4gVVRTHv7vbD4vIarUwYtu0+mexpCS0yCSLYi1c2laSzHa13eqP8lWs/dFGQkEilkQYVGBbf0RImwZFuVJRkUUIbiaY5rK5WUlgm2XIbm0vDt2B02lm3n1vZt7cmXe+cP7YeXfezJ7P3DP353mASqVS5Vr1AO4GsB3AAQDDauA+OGB8s8L4KlGdBOAtAEU12PhgAEBDkkDWKAiU+zA+kiSQYXah9wG0ArhBDdwHrcY3np++TQrGFEG+OakL5UDNwlfku9h1lrgI/a1K0VdhF+kD8GKNW59LQHbryx7kAwUCd5rgzgKhtve6GrGBLABpQ+2oTYG4JQUSop4Qa0cyUiAhsn3hxikFkgCQjwDsKmHLAs5VICHaAeCTCoCMWTRpCwHn1hSQOgCnlFG+EcCnCiQZIKcDeNOEi1kW5S8xE0P8gfm5ghrSC6DD2JdaQ/7VDOGMYwDuQLDmC+eTvWHOKRfIHHZ8qwIBLgNwKCDsvAbgNOFMepJPsDJ/A1hrwl1QfFcglmoDcFxAmBR/eyGMHP64AeB9RmCWijD2qLEuBVKeeoXz/wTQDeA6AD8IKL8CeEccOwJgHiqThiyxaOIF4dzfASxmZaYBeC+kSbo34uylAjE6B8CHwrk/ArjSx2kUolYDmBDlBwFMjQBDgRhdDGCfz5N+YQnnLWAh7CUAJ0eEoUAAXA/gFwHjgzJ6s+cCuDPgsy6LhXuyxVXTIWuVT9h5tcweeZgKFsMgBICrpoE8Lb7jOfN+iEsFBVIeEHL+66aWrLRw8FYzaBhmtwUA+YwtXrtXa0iwTjXDHTYas3jiCwFACKYnCkUasmLQmAJxF8iTbEqWX09rSEpA5li0gDRkKRBkttk7l42+BllBnKM1JEEg1egjFLSVpUCKWQ1Z/OkdYcv4ae5ca0jKQJLqtBU0ZCmQYh5CltaQGKRAcjD83glgizFe5jA7PsiOT7DjW8TcySA7flg4oprX6MwykI0WfY+s2UYFgtQh5AbIIovhkqzZoiwDybvaFIhbUiCOSYE4pswB6Ysh49x6JCfa3rAEwDMAtgHYaa75lUmxtBnAcrO+OBdA4uiHvJLA/3KRWeR9zPIe/gLwsfnf+DoyBRJRtATpKQDjER4QWu81O6tALo0h21xLTPd/gdgq59mEWXD3mEnuebNJNPAAgE0ARn3OOWH2r2QOiCuaBeA7cf9HATwM4OwS59aZzUA8bZ9nfBu2ArHUdAAHhSM3V/jU3mR2a/mFskwAWRpDprZOEQKDygU93YPi5fxQRD80ARjKKpC4W1kLQ8r5qVuUiQrD0zSRoVWBoDQQygT6vQhTcapF7BrORA25NYasbR3s+2aGlJNaLV7gNk7pYqO6tK26lJ5g1/gNwBkWvqrZVta+CrJLl/t/EICf2Dm0Q4ykQIRmin5GqaZtlAdrAzvnbdeBzC+R6c3GFrLvOz+kHNeD7H6o04cEgVwrwla9y0DSamW9zI5TDzxJIA1iKIa2disQ/Fc89Qbvx3D1+GSO+4Odd9Dn8yDxUYAFLgO532LTZinrZd93eUg5rl3sfmhsyk9rK6itQfqclVnsMpC0tJPdT3sVgOxlZW5UIP8X/xUgGrUN6th1CBth5633+TxIR9l5c12uIY2mCRrFposZvqByXJvY/dBElK0qqennsXMof9eZLgNJq5W1ih0fLSNbRCVA+HjZNxa+qkkgTSLb3LwEgWxn5zxr4auaBAIzB+59RpNLSQC5RtwDvT+cBpKmloj7pcmlOFUvWnOZGO1NU3VmQYJ3X0dMKItL64Q/JllCHQUSoNkijexQyBqrcnRPQNj0oCiQEMlZw+EIK1nqfWrGHtF/mTQzkxqyQiR75cfN5JI3oWSjq8U7wxvvmmGyonIo0vQdEvCzsbwp7L1XNpgh9IaATl+3aNrymkEwPIVBSRXIUAwDijsSMpl8k9u4SXNOteBrMRziZyM++YKDoKQKJM+2W2TgtoVCjQAFgngg0FzH8wCuMh5dWQEU3iSuSg1pj2GqtscRo6f5dpN3nt4hfnICSlXa1hlSl4ByyGfUuUksqKNGxX1x3YACcQyKa0CmhmxdjpqgvxylFr5cA9Ic8iKO8vMV1YSyIspFFUj8UMajbEhyDUhjyNYE+gwOQ+G/s0VryHIBxFXZQFkuhmAq0pSU43SWtEb4SkK5i31GS4gq1rCYFm2NYVNn3uwWAF/4NDRGDYhl4j3SHwVIb0pjSMWcGv0a3RVRgNAQ9YAD/0gxI9Zv1hb77Yv3fhowsupN1aOQtT+G1Bl5s/0A3hUrHVtMa2qPeWf0R60ZKpVKhfT1D+rKmeVcI8BGAAAAAElFTkSuQmCC">
+                    </div>
+                    <h3>Data Analyst</h3>
+                    <p>Learn more..</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <h1 class="title">Portfolio</h1>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam voluptatibus
+                </p>
+        
+                <div class="grid">
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80" alt="">
+                        <h2 class="item-title">Best website collections</h2>
+                        <p class="item-category">Website</p>
+                    </div>
+        
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
+                        <h2 class="item-title">Block of Ui kit collections</h2>
+                        <p class="item-category">Ui kit</p>
+                    </div>
+        
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                        <h2 class="item-title">Ton’s of mobile mockup</h2>
+                        <p class="item-category">Mockups</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="container">
+                <h2 class="contact-title">Contact Us</h2>
+                <p class="contact-description">Feel free to reach out to us for any inquiries or feedback.</p>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+                
+
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,548 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins';
+}
+body{
+    transition: margin-left 0.3s ease-in-out;
+    background-color: #08021d;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 70px;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    padding: 0 20px;
+    width: 100%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+.logo a {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.logo a span {
+    color: crimson;
+    
+}
+
+.menu {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+    
+}
+
+.menu-li {
+    margin: 0 15px; 
+}
+
+.menu-li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    padding: 10px 10px; 
+    transition: background-color 0.3s ease; /* Animasi transisi */
+    border-radius: 5px;
+}
+
+.menu-li a:hover {
+    background-color:crimson; 
+    border-radius: 5px; 
+}
+
+.menu-li a span {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.menu-btn {
+    display: none; /* Sembunyikan di desktop */
+    cursor: pointer;
+}
+
+.menu-btn svg {
+    fill: white;
+    transition: transform 0.3s ease; /* Animasi transformasi */
+}
+
+
+/* Section Home */
+.home {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-around; /* Menyebar konten di kiri dan kanan */
+    align-items: center; /* Pusatkan item secara vertikal */
+    height: 100vh;
+    background-color: #08021d; /* Latar belakang gelap */
+    padding: 20px;
+    color: white;
+    text-align: left; /* Teks di sebelah kiri */
+
+.featured-text {
+    text-align: left;
+    max-width: 600px; /* Batasi lebar konten */
+}
+
+.hello p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f39c12; /* Warna teks hello */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+}
+
+/* Gaya Nama */
+.featured-name {
+    font-size: 50px;
+    font-weight: 400;
+    color: #f39c12; /* Warna nama yang mencolok */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.featured-text-info p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: center; /* Memusatkan gambar dalam div */
+    align-items: center; /* Memusatkan gambar secara vertikal */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang keluar dari div */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    width: 200px; /* Ubah sesuai kebutuhan */
+    height: 200px; /* Ubah sesuai kebutuhan */
+}
+
+.image img {
+    width: 100%; /* Mengisi lebar div */
+    height: auto; /* Memastikan proporsi gambar tetap terjaga */
+    border-radius: 50%; /* Membuat gambar itu sendiri menjadi bulat */
+}
+/* Media query untuk tampilan yang lebih kecil (smartphone/tablet) */
+@media (max-width: 768px) {
+    .featured-name {
+        font-size: 36px; /* Ubah ukuran nama */
+    }
+
+    .featured-text-info p {
+        font-size: 16px; /* Ukuran teks lebih kecil untuk layar kecil */
+    }
+.image{
+    border-radius: 50%;
+}
+}
+
+@media (max-width: 480px) {
+    .hello p {
+        font-size: 18px;
+    }
+
+    .featured-name {
+        font-size: 28px;
+    }
+
+    .featured-text-info p {
+        font-size: 14px;
+    }
+    .image{
+        border-radius: 50%;
+    }
+}
+}
+
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .menu {
+        position: fixed;
+        top: -100%; /* Mulai di luar layar atas */
+        left: 0;
+        width: 100%;
+        max-height: 60vh; /* Batasi tinggi menu */
+        background-color: rgba(8, 2, 29, 0.95);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px 0;
+        transition: top 0.3s ease-in-out;
+        overflow-y: auto;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    .menu-li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-li a {
+        font-size: 16px;
+        padding: 10px 20px;
+        display: block;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 1001;
+    }
+
+    .menu.active {
+        top: 70px; /* Turun tepat di bawah header */
+    }
+
+    .menu-btn.active svg {
+        transform: rotate(90deg);
+    }
+}
+
+body {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+#about-me {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dc143c;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #ff1a4b;
+}
+
+.download-cv {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dc143c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+    background-color: #ff1a4b;
+}
+
+/* Responsif untuk tablet */
+@media screen and (max-width: 768px) {
+    #about-me {
+        padding: 40px 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Responsif untuk smartphone */
+@media screen and (max-width: 480px) {
+    #about-me {
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .download-cv {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+.services {
+    padding: 50px 20px; /* Padding bagian atas dan bawah */
+    text-align: center; /* Pusatkan teks */
+}
+
+.services h2 {
+    margin-bottom: 30px; /* Jarak bawah untuk judul */
+    font-size: 2.5em; /* Ukuran font untuk judul */
+}
+
+.services-container {
+    display: flex; /* Gunakan flexbox untuk penataan */
+    justify-content: center; /* Pusatkan kartu layanan */
+    flex-wrap: wrap; /* Biarkan kartu wrap ke baris baru */
+}
+
+.service-card {
+    background-color: #D4006A; /* Warna latar belakang kartu */
+    border-radius: 15px; /* Sudut melengkung */
+    padding: 20px; /* Padding dalam kartu */
+    margin: 15px; /* Jarak antar kartu */
+    width: 250px; /* Lebar tetap untuk kartu */
+    text-align: center; /* Pusatkan teks dalam kartu */
+    transition: transform 0.3s; /* Efek transisi */
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.service-icon {
+    margin-bottom: 15px; /* Jarak antara ikon dan teks */
+}
+
+.service-icon svg {
+    fill: #ffffff; /* Warna ikon */
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column; /* Ubah arah menjadi kolom pada layar kecil */
+    }
+
+    .service-card {
+        width: 90%; /* Lebar kartu lebih kecil di layar kecil */
+    }
+}
+
+
+
+.container {
+    padding: 40px 24px; /* px-6 py-10 */
+    max-width: 1200px; /* Container width */
+    margin: 0 auto; /* Center the container */
+}
+
+.title {
+    font-size: 2rem; /* text-2xl */
+    font-weight: bold; /* font-semibold */
+    text-align: center; /* text-center */
+    color: #ffff; /* text-gray-800 */
+    margin-top: 0; /* Reset margin */
+    margin-bottom: 16px; /* mt-4 */
+}
+
+.description {
+    text-align: center; /* text-center */
+    color: #a0aec0; /* text-gray-500 */
+    margin-top: 0; /* Reset margin */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+    gap: 32px; /* gap-8 */
+    margin-top: 32px; /* mt-8 */
+}
+
+.grid-item {
+    background-color: transparent; /* Default background */
+    border-radius: 8px; /* rounded-lg */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.grid-item img {
+    width: 100%; /* Full width */
+    height: 24rem; /* h-96 */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.item-title {
+    margin-top: 16px; /* mt-4 */
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    color: #4a5568; /* text-gray-800 */
+}
+
+.item-category {
+    margin-top: 8px; /* mt-2 */
+    font-size: 1.125rem; /* text-lg */
+    color: #4299e1; /* text-blue-500 */
+    text-transform: uppercase; /* uppercase */
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* xl:grid-cols-3 */
+    }
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 60px 24px; /* Padding top and bottom */
+}
+
+.contact-title {
+    font-size: 2rem; /* Title size */
+    font-weight: 600; /* Font weight */
+    text-align: center; /* Centered */
+    margin-bottom: 16px; /* Margin bottom */
+}
+
+.contact-description {
+    text-align: center; /* Centered */
+    color: #4a5568; /* Gray color */
+    margin-bottom: 40px; /* Margin bottom */
+}
+
+.contact-form {
+    max-width: 600px; /* Maximum width for form */
+    margin: 0 auto; /* Center form */
+}
+
+.form-group {
+    margin-bottom: 24px; /* Space between fields */
+}
+
+.form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 8px; /* Space between label and input */
+    font-weight: 500; /* Font weight for label */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding for inputs */
+    border: 1px solid #cbd5e0; /* Gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resize only */
+}
+
+.submit-btn {
+    background-color: #4299e1; /* Blue background */
+    color: white; /* White text */
+    padding: 12px 24px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.submit-btn:hover {
+    background-color: #3182ce; /* Darker blue on hover */
+}
+
+/* Footer */
+.footer {
+    background-color:  rgba(0, 0, 0, 0.4);; /* Dark background */
+    color: white; /* White text */
+    padding: 5px 5px; /* Padding */
+    text-align: center; /* Centered */
+}
+
+.footer-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Flex display */
+    justify-content: center; /* Center links */
+    gap: 20px; /* Space between links */
+}
+
+.footer-links li {
+    display: inline; /* Inline display for links */
+}
+
+.footer-links a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Space between links */
+    }
+}
